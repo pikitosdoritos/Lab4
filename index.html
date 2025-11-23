@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratory work</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="info.js" defer></script>
+    <script src="math.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-nav">
+
+            <div class="left-side">
+                <img class="site-icon" src="images/4922073.png" alt="">
+                <a href="media.html">Media</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <h1>My Blog</h1>
+
+            <div class="right-side">
+                <button class="en-button">EN</button>
+                <button class="ua-button">UA</button>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main-block">
+        <h2>Welcome — here I share my thoughts and stories!</h2>
+
+        <section class="main-post">
+            <img class="photo1" id="mainPhoto" onmouseover="increasePhoto()" onmouseout="resetPhoto()"
+                src="images/my-photo.jpg" alt="me">
+            <div class="first-block">
+                <h3>About me</h3>
+                <p>Hi! I’m <strong>Nikita Fastovets</strong> — a passionate full-stack developer and Computer Science
+                    student at
+                    KNEU. I enjoy building modern web applications using FastAPI, PostgreSQL, and WordPress,
+                    and I love creating clean, functional interfaces that actually make sense.
+                    I’m currently developing Qurvey, a survey and analytics platform, where I handle both backend
+                    and frontend logic. My goal is to keep learning, improving, and turning ideas into real working
+                    products.
+                    Outside of coding, I train in Taekwon-Do ITF, explore new business concepts, and experiment with
+                    tech gear. This blog is where I share my experiences, thoughts, and lessons learned along the way.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="minor-post">
+            <h3 class="minor-h3">My hobbies</h3>
+            <div class="taekwon-do">
+                <h4>Taekwon-Do ITF</h4>
+                <p> Taekwon-Do ITF has been a big part of my life for years. It’s not just a sport — it’s a way of
+                    thinking, a discipline that shapes both the body and the mind. Through training, I’ve learned
+                    patience, focus, and respect — not only for others but also for myself.
+
+                    I’ve competed in numerous tournaments, constantly pushing my limits and learning from every fight.
+                    Each training session teaches me something new about perseverance and self-control.
+
+                    Taekwon-Do is more than breaking boards or winning medals. It’s about inner strength, confidence,
+                    and the drive to improve every single day. That same mindset helps me in coding, studying, and life
+                    — to stay sharp, calm, and always ready for the next challenge.
+                </p>
+
+            </div>
+
+            <div class="my-it">
+                <h4>Full-Stack Developer | Computer Science Student</h4>
+                <p>
+                    Hi, I'm Nikita Fastovets, a full-stack developer and Computer Science student at KNEU. My goal is to
+                    build clean, functional, and intuitive web applications that solve real-world problems.
+                    I have experience with a modern tech stack, including FastAPI for building high-performance APIs and
+                    PostgreSQL for reliable data storage. I am also proficient with WordPress, developing custom
+                    solutions.
+                    Currently, I am actively developing Qurvey, my own survey and analytics platform, where I handle the
+                    full development cycle—from backend logic to the frontend interface. This project allows me to
+                    sharpen
+                    my technical skills while deepening my understanding of business needs.
+                    I am always open to new ideas, challenges, and collaboration opportunities.
+                </p>
+            </div>
+
+            <div class="books">
+                <h4>Reading books</h4>
+                <p>
+                    For me, reading isn't just a pastime; it's a way to understand the systems that shape our world. I'm
+                    drawn to non-fiction, especially books on strategy, psychology, and financial literacy. Authors like
+                    Robert Kiyosaki ("Rich Dad Poor Dad") and Robert Greene ("The 48 Laws of Power") have trained me to
+                    look at challenges from a different, more strategic angle.
+                    I believe the principles in these books are universal. Understanding human motivation and long-term
+                    planning is just as critical in software development as it is in life. Building a great IT product
+                    requires thinking several steps ahead and truly understanding the end-user—skills I sharpen with
+                    every book I read. I see it as mental training that complements my physical discipline, helping me
+                    achieve my goals both in code and beyond.
+                </p>
+            </div>
+
+        </section>
+        <div class="quote-container">
+            <div id="quote"></div>
+            <button id="newQuoteBtn">Update</button>
+        </div>
+        <br>
+        <section class="math-section">
+            <h2>Calculation of basic mathematical operations</h2>
+            <button id="calcBtn">Calculate</button>
+            <div id="result" class="result-box"></div>
+        </section>
+
+        <section class="image-chooser">
+            <h5>Showcase</h5>
+            <div id="imageDisplay"></div>
+            <input type="radio" name="imgChoice" value="1">
+            <input type="radio" name="imgChoice" value="2">
+            <input type="radio" name="imgChoice" value="3">
+            <input type="radio" name="imgChoice" value="4">
+            <input type="radio" name="imgChoice" value="5">
+        </section>
+
+        <section class="select-menu-section">
+            <h3 class="select-title">Go to page</h3>
+            <div class="select-wrapper">
+                <select id="pageSelect" class="ios-select">
+                    <option value="">Select page</option>
+                    <option value="index.html">Main page</option>
+                    <option value="media.html">Media</option>
+                    <option value="contact.html">Contact</option>
+                    <option value="index_ua.html">UA version</option>
+                </select>
+            </div>
+        </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <nav class="static-menu">
+            <a class="menu-link" href="index.html">Home</a>
+            <a class="menu-link" href="media.html">Media</a>
+            <a class="menu-link" href="contact.html">Contact</a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

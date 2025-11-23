@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="info.js" defer></script>
+    <script src="math.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-nav">
+
+            <div class="left-side">
+                <img class="site-icon" src="images/4922073.png" alt="">
+                <a href="media.html">Media</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <h1>My Blog</h1>
+
+            <div class="right-side">
+                <button class="en-button">EN</button>
+                <button class="ua-button">UA</button>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main-block">
+        <h2>Ласкаво прошу — тут я ділюсь своїми думками та історіями!</h2>
+
+        <section class="main-post">
+            <img class="photo1" id="mainPhoto" onmouseover="increasePhoto()" onmouseout="resetPhoto()"
+                src="images/my-photo.jpg" alt="Я">
+            <div class="first-block">
+                <h3>Про мене</h3>
+                <p>Привіт! Я <strong>Нікіта Фастовець</strong> — захоплений full-stack розробник і студент спеціальності
+                    «Комп’ютерні науки» у КНЕУ. Я люблю створювати сучасні веб-додатки на FastAPI, PostgreSQL та
+                    WordPress,
+                    а також будувати чисті, зручні та логічні інтерфейси.
+                    Зараз я розробляю <strong>Qurvey</strong> — платформу для опитувань та аналітики, де займаюся і
+                    бекендом, і фронтендом.
+                    Моя мета — постійно вчитись, рости й перетворювати ідеї на працюючі продукти.
+                    Окрім програмування, я тренуюсь у Таеквон-До ITF, досліджую нові бізнес-концепції та експериментую з
+                    технікою.
+                    У цьому блозі я ділюся досвідом, думками та уроками, які отримую в процесі навчання та роботи.
+                </p>
+            </div>
+        </section>
+
+        <section class="minor-post">
+            <h3 class="minor-h3">Мої хобі</h3>
+
+            <div class="taekwon-do">
+                <h4>Таеквон-До ITF</h4>
+                <p>
+                    Таеквон-До ITF — велика частина мого життя вже багато років. Це не просто спорт — це спосіб
+                    мислення,
+                    дисципліна, що формує і тіло, і характер. Завдяки тренуванням я навчився терпінню, зосередженості та
+                    повазі —
+                    як до інших, так і до себе.
+                    Я брав участь у багатьох змаганнях, постійно виходячи за свої межі та навчаючись після кожного бою.
+                    Кожне тренування — це новий урок витривалості, самоконтролю та самовдосконалення.
+                    Таеквон-До — це не лише розбиті дошки чи медалі. Це внутрішня сила, впевненість та бажання працювати
+                    над собою щодня. Цей підхід допомагає мені і в навчанні, і в програмуванні — залишатися зібраним,
+                    спокійним
+                    і готовим до будь-яких викликів.
+                </p>
+            </div>
+
+            <div class="my-it">
+                <h4>Full-Stack Developer | Студент Комп’ютерних Наук</h4>
+                <p>
+                    Привіт! Я — Нікіта Фастовець, full-stack розробник і студент КНЕУ. Я прагну створювати чисті,
+                    функціональні та інтуїтивні веб-додатки, що вирішують реальні задачі.
+                    Маю досвід роботи з сучасним стеком: FastAPI для створення високопродуктивних API та PostgreSQL для
+                    надійного зберігання даних. Також працюю з WordPress, створюючи кастомні рішення.
+                    Наразі активно розробляю <strong>Qurvey</strong> — власну платформу для опитувань і аналітики, де я
+                    повністю веду цикл
+                    розробки: від бекенду до інтерфейсу. Це дає мені змогу розвивати технічні навички та розуміння
+                    бізнес-процесів.
+                    Я завжди відкритий до нових ідей, викликів та можливостей для співпраці.
+                </p>
+            </div>
+
+            <div class="books">
+                <h4>Читання книг</h4>
+                <p>
+                    Для мене читання — це не просто хобі; це спосіб зрозуміти системи, які формують наш світ.
+                    Мене приваблює нон-фікшн, особливо книги про стратегію, психологію та фінансову грамотність.
+                    Автори на кшталт Роберта Кійосакі («Багатий тато, бідний тато») та Роберта Гріна
+                    («48 законів влади») навчили мене дивитися на виклики стратегічно.
+                    Ці принципи універсальні. Розуміння людської мотивації та довгострокового планування важливе у
+                    всьому —
+                    від програмування до життя. Я вважаю читання розумовим тренуванням, що доповнює мою фізичну
+                    дисципліну,
+                    допомагає розвиватися та рухатися до своїх цілей.
+                </p>
+            </div>
+
+        </section>
+
+        <div class="quote-container">
+            <div id="quote"></div>
+            <button id="newQuoteBtn">Оновити</button>
+        </div>
+
+        <br>
+
+        <section class="math-section">
+            <h2>Обчислення основних математичних операцій</h2>
+            <button id="calcBtn">Обчислити</button>
+            <div id="result" class="result-box"></div>
+        </section>
+
+        <section class="image-chooser">
+            <h5>Вітрина</h5>
+            <div id="imageDisplay"></div>
+            <input type="radio" name="imgChoice" value="1">
+            <input type="radio" name="imgChoice" value="2">
+            <input type="radio" name="imgChoice" value="3">
+            <input type="radio" name="imgChoice" value="4">
+            <input type="radio" name="imgChoice" value="5">
+        </section>
+
+        <section class="select-menu-section">
+            <h3 class="select-title">Go to page</h3>
+            <div class="select-wrapper">
+                <select id="pageSelect" class="ios-select">
+                    <option value="">Select page</option>
+                    <option value="index.html">Main page</option>
+                    <option value="media.html">Media</option>
+                    <option value="contact.html">Contact</option>
+                    <option value="index_ua.html">UA version</option>
+                </select>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <nav class="static-menu">
+            <a class="menu-link" href="index.html">Home</a>
+            <a class="menu-link" href="media.html">Media</a>
+            <a class="menu-link" href="contact.html">Contact</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
