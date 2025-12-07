@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медіа</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="info.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-nav">
+
+            <div class="left-side">
+                <img class="site-icon" src="images/4922073.png" alt="">
+                <a href="index_ua.html">Головна</a>
+                <a href="contact_ua.html">Контакти</a>
+            </div>
+
+            <h1>Медіа</h1>
+
+            <div class="right-side">
+                <button class="en-button">EN</button>
+                <button class="ua-button">UA</button>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main-block">
+
+        <h2>Моя медіа-галерея та проєкти</h2>
+
+        <!-- ==== ГАЛЕРЕЯ ==== -->
+        <section class="minor-post">
+            <h3 class="minor-h3">Фотогалерея</h3>
+
+            <div class="image-chooser">
+                <h5>Обери зображення</h5>
+                <div id="imageDisplay"></div>
+
+                <input type="radio" name="imgChoice" value="1">
+                <input type="radio" name="imgChoice" value="2">
+                <input type="radio" name="imgChoice" value="3">
+                <input type="radio" name="imgChoice" value="4">
+                <input type="radio" name="imgChoice" value="5">
+            </div>
+        </section>
+
+        <!-- ==== ВІДЕО ==== -->
+        <section class="minor-post">
+            <h3 class="minor-h3">Відео</h3>
+
+            <div style="text-align:center;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zC4-XMF_dNY?si=22V2sL6j0BteGKHH"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- ==== ПРОЄКТИ ==== -->
+        <section class="minor-post">
+            <h3 class="minor-h3">Мої IT-проєкти</h3>
+
+            <div style="font-size:18px; line-height:1.6;">
+                <strong>Qurvey</strong> — власна платформа для опитувань на FastAPI, PostgreSQL та WordPress.<br><br>
+                <strong>Персональний блог</strong> — сайт, який ти бачиш зараз. Повністю створений на
+                HTML/CSS/JS.<br><br>
+                <strong>Python-автоматизація</strong> — утиліти для аналізу даних та ML-експериментів.
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <nav class="static-menu">
+            <a class="menu-link" href="index_ua.html">Головна</a>
+            <a class="menu-link" href="media_ua.html">Медіа</a>
+            <a class="menu-link" href="contact_ua.html">Контакти</a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

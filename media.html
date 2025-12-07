@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="info.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-nav">
+
+            <div class="left-side">
+                <img class="site-icon" src="images/4922073.png" alt="">
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <h1>Media</h1>
+
+            <div class="right-side">
+                <button class="en-button">EN</button>
+                <button class="ua-button">UA</button>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main-block">
+
+        <h2>My Media Gallery & Projects</h2>
+
+        <!-- ==== GALLERY BLOCK ==== -->
+        <section class="minor-post">
+            <h3 class="minor-h3">Photo Gallery</h3>
+
+            <div class="image-chooser">
+                <h5>Choose an image</h5>
+                <div id="imageDisplay"></div>
+
+                <input type="radio" name="imgChoice" value="1">
+                <input type="radio" name="imgChoice" value="2">
+                <input type="radio" name="imgChoice" value="3">
+                <input type="radio" name="imgChoice" value="4">
+                <input type="radio" name="imgChoice" value="5">
+            </div>
+        </section>
+
+        <!-- ==== VIDEO BLOCK ==== -->
+        <section class="minor-post">
+            <h3 class="minor-h3">Videos</h3>
+
+            <div style="text-align:center;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zC4-XMF_dNY?si=22V2sL6j0BteGKHH"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- ==== PROJECTS BLOCK ==== -->
+        <section class="minor-post">
+            <h3 class="minor-h3">My IT Projects</h3>
+
+            <div style="font-size:18px; line-height:1.6;">
+                <strong>Qurvey</strong> — my own survey platform built with FastAPI, PostgreSQL, and custom WordPress
+                UI.<br><br>
+                <strong>Personal Blog</strong> — the website you’re on right now: fully written in HTML/CSS/JS, with
+                multilingual support.<br><br>
+                <strong>Automation Tools</strong> — Python utilities for data parsing, statistics, and machine learning
+                experiments.
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <nav class="static-menu">
+            <a class="menu-link" href="index.html">Home</a>
+            <a class="menu-link" href="media.html">Media</a>
+            <a class="menu-link" href="contact.html">Contact</a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

@@ -499,3 +499,27 @@ select-title {
 .ios-select:active {
     transform: scale(0.98);
 }
+
+.image-buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.image-btn {
+    background-color: #b3541e;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.25s ease;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+}
+
+.image-btn:hover {
+    background-color: #e28b2c;
+    transform: scale(1.07);
+}

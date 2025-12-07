@@ -67,26 +67,45 @@ function languageChange() {
 }
 
 function imageChooser() {
-    const radioBtn = document.querySelectorAll('input[name="imgChoice"]')
-    const display = document.getElementById('imageDisplay')
+    const radioBtn = document.querySelectorAll('input[name="imgChoice"]');
+    const display = document.getElementById('imageDisplay');
 
     for (let radio of radioBtn) {
         radio.addEventListener('change', function () {
-            const selectedValue = this.value
+            const selectedValue = this.value;
 
-            if (selectedValue === '1') {
-                display.innerHTML = `<img src="images/img1.jpg" width="300" height="300">`
-            } else if (selectedValue === '2') {
-                display.innerHTML = `<img src="images/img2.jpg" width="300" height="300">`
-            } else if (selectedValue === '3') {
-                display.innerHTML = `<img src="images/img3.jpg" width="300" height="300">`
-            } else if (selectedValue === '4') {
-                display.innerHTML = `<img src="images/img4.jpg" width="300" height="300">`
-            } else if (selectedValue === '5') {
-                display.innerHTML = `<img src="images/img5.jpg" width="300" height="300">`
-            }
-        })
+            display.innerHTML = `<img id="galleryImg" src="images/img${selectedValue}.jpg">`;
+
+            const img = document.getElementById("galleryImg");
+
+            img.onload = function () {
+                updateNaturalSize(img);  // читаємо справжні розміри
+                currentWidth = img.naturalWidth * 0.6; // стартова ширина
+                resizeImage();           // малюємо без деформації
+            };
+        });
     }
+}
+
+let currentWidth = 500;
+let step = 50;
+
+let naturalWidth = null;
+let naturalHeight = null;
+
+function updateNaturalSize(img) {
+    naturalWidth = img.naturalWidth;
+    naturalHeight = img.naturalHeight;
+}
+
+function resizeImage() {
+    const img = document.querySelector("#imageDisplay img");
+    if (!img || !naturalWidth || !naturalHeight) return;
+
+    img.style.width = currentWidth + "px";
+
+    const ratio = naturalHeight / naturalWidth;
+    img.style.height = currentWidth * ratio + "px";
 }
 
 function staticMenuHover() {
@@ -115,3 +134,19 @@ function selectMenuNavigation() {
     })
 }
 
+// --- Zoom In ---
+document.getElementById("zoomInBtn").addEventListener("click", function () {
+    currentWidth += step;
+    resizeImage();
+});
+
+// --- Zoom Out ---
+document.getElementById("zoomOutBtn").addEventListener("click", function () {
+    if (currentWidth > 100) currentWidth -= step;
+    resizeImage();
+});
+
+// --- Back Button ---
+document.getElementById("backBtn").addEventListener("click", function () {
+    window.location.href = document.referrer || "index.html";
+});
